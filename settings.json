@@ -1,0 +1,90 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "chat_panel": {
+    "dock": "right"
+  },
+  "terminal": {
+    "dock": "bottom"
+  },
+  "language_models": {
+    "anthropic": {
+      "version": "1"
+    }
+  },
+  "confirm_quit": true,
+  "tabs": { "file_icons": true },
+  "theme": "Dracula Pro (Buffy)",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "ui_font_family": "JetBrains Mono",
+  "experimental.theme_overrides": {
+    "syntax": {
+      "keyword": {
+        "font_style": "italic"
+      }
+    }
+  },
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_features": {
+    "calt": true
+  },
+  "buffer_font_size": 16,
+  "relative_line_numbers": true,
+  "formatter": {
+    "external": {
+      "command": "prettier",
+      "arguments": ["--stdin-filepath", "${buffer_path}"]
+    }
+  },
+  "languages": {
+    "TypeScript": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "${buffer_path}"]
+        }
+      },
+      "preferred_line_length": 100,
+      "soft_wrap": "preferred_line_length",
+      "code_actions": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
+      }
+    },
+    "Astro": {
+      "format_on_save": "on",
+      "preferred_line_length": 100,
+      "soft_wrap": "preferred_line_length",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "${buffer_path}"]
+        }
+      },
+      "code_actions": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
+      }
+    }
+  },
+  "features": {
+    "inline_completion_provider": "copilot",
+    "show_inline_completions": true
+  },
+  "assistant": {
+    "dock": "right",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "format_on_save": "on"
+}
