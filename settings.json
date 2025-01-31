@@ -11,15 +11,23 @@
     "dock": "right"
   },
   "terminal": {
-    "dock": "bottom"
+    "dock": "bottom",
   },
   "language_models": {
     "anthropic": {
       "version": "1"
     }
   },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "project_panel": {},
+  "tab_bar": {
+    "show": false
+  },
   "confirm_quit": true,
-  "tabs": { "file_icons": true },
+  "tabs": { "file_icons": true, "git_status": true },
   "theme": "Dracula Pro (Buffy)",
   "vim_mode": true,
   "ui_font_size": 16,
@@ -81,8 +89,8 @@
   "assistant": {
     "dock": "right",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
