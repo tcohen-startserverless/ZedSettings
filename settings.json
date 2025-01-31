@@ -11,7 +11,7 @@
     "dock": "right"
   },
   "terminal": {
-    "dock": "bottom",
+    "dock": "bottom"
   },
   "language_models": {
     "anthropic": {
@@ -87,6 +87,7 @@
     "show_inline_completions": true
   },
   "assistant": {
+    "enable_experimental_live_diffs": true,
     "dock": "right",
     "default_model": {
       "provider": "zed.dev",
